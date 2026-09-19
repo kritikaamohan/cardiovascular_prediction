@@ -1,8 +1,3 @@
-Here is a professional, clean, and comprehensive `README.md` template tailored for your **CVD-Prophet-Forecasting** project. It includes sections for project overview, key features, methodology (using Meta's Prophet model), installation steps, usage instructions, and future improvements.
-
-You can copy and paste this directly into a `README.md` file in your repository:
-
-```markdown
 # 📈 CVD Prophet Forecasting
 
 A robust time-series forecasting pipeline built using Meta’s **Prophet** library to model and predict Cardiovascular Disease (CVD) trends and patterns.
