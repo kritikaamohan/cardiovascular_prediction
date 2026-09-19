@@ -1,27 +1,27 @@
-# 📈 CVD Prophet Forecasting
+# 📈 Cardiovascular Disease (CVD) Prophet Forecasting & Risk Analysis
 
-A robust time-series forecasting pipeline built using Meta’s **Prophet** library to model and predict Cardiovascular Disease (CVD) trends and patterns.
+An advanced time-series forecasting and risk-assessment pipeline built using Meta’s **Prophet** model to project cardiovascular disease (CVD) trends, evaluate county-level impacts, and identify high-risk demographic segments through 2030.
 
 ---
 
 ## 🚀 About the Project
-Time-series forecasting plays a critical role in proactive healthcare management and resource allocation. This project utilizes Facebook Prophet—an open-source forecasting tool designed for handling time series data with daily, weekly, or yearly seasonality along with holiday effects—to accurately predict future trends in cardiovascular disease metrics.
+Cardiovascular diseases remain a critical public health challenge. This project leverages time-series analysis and forecasting techniques to model historical CVD incidence data, project future trajectories up to 2030, and isolate high-risk zones and age groups. By breaking down projections into distinct cohorts (such as ages 35–64 and 65+), the project aims to assist healthcare planners and policymakers in targeted resource allocation.
 
 ---
 
 ## ✨ Key Features
-- **Trend Analysis:** Deconstructs historical CVD data into underlying trends and seasonal periodicities.
-- **Prophet Modeling:** Leverages additive regression models for robust handling of missing data and trend shifts.
-- **Future Predictions:** Generates multi-step ahead forecasts accompanied by uncertainty intervals.
-- **Visualization:** Built-in plotting scripts to visualize historical fits, forecasted trajectories, and components (trend/seasonality).
+- **Prophet Time-Series Modeling:** Employs additive regression models to capture temporal trends, seasonality, and long-term trajectory shifts.
+- **Demographic Segmentation:** Generates separate predictive forecasts for different age brackets (e.g., 35–64 and 65+ cohorts).
+- **County-Level Risk Ranking:** Automatically processes model outputs to surface the top 10 high-risk counties for proactive intervention.
+- **Validation & Performance Metrics:** Includes systematic tracking of validation errors to ensure forecasting accuracy.
 
 ---
 
 ## 🛠️ Tech Stack & Libraries
 - **Language:** Python
-- **Forecasting Model:** Prophet (Meta / Facebook)
-- **Data Manipulation:** Pandas, NumPy
-- **Data Visualization:** Matplotlib, Seaborn
+- **Forecasting Engine:** Prophet (Meta / Facebook)
+- **Data Manipulation & Analysis:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
 
 ---
 
@@ -30,20 +30,20 @@ Time-series forecasting plays a critical role in proactive healthcare management
 cardiovascular_prediction/
 │
 ├── data/
-│   └── CVD.csv                    # Main input dataset
+│   └── CVD.csv                                 # Main historical CVD dataset
 │
-├── notebooks/                     # Analysis and forecasting scripts/notebooks
-│   └── CVD_Prophet_Forecasting_2030.ipynb[cite: 1]
+├── notebooks/
+│   └── CVD_Prophet_Forecasting_2030.ipynb      # Core exploratory data analysis and forecasting notebook
 │
-├── outputs/                       # Generated model outputs and forecasts[cite: 1]
-│   ├── county_forecast_2030_35_64.csv
-│   ├── county_forecast_2030_65_plus.csv
-│   ├── top10_high_risk_counties_35_64.csv
-│   ├── top10_high_risk_counties_65_plus.csv
-│   └── validation_metrics.csv
+├── outputs/                                    # Generated model forecasts and validation metrics
+│   ├── county_forecast_2030_35_64.csv          # Forecasts for the 35–64 age group
+│   ├── county_forecast_2030_65_plus.csv        # Forecasts for the 65+ age group
+│   ├── top10_high_risk_counties_35_64.csv      # Top 10 high-risk counties (35–64)
+│   ├── top10_high_risk_counties_65_plus.csv    # Top 10 high-risk counties (65+)
+│   └── validation_metrics.csv                  # Model evaluation performance metrics
 │
-├── requirements.txt               # Python dependencies[cite: 1]
-└── README.md                      # Project documentation[cite: 1]
+├── requirements.txt                            # Project dependencies
+└── README.md                                   # Project documentation
 
 ```
 
@@ -55,13 +55,13 @@ Follow these steps to set up and run the project locally:
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/Gauravkumar8864/CVD-Prophet-Forecasting.git](https://github.com/Gauravkumar8864/CVD-Prophet-Forecasting.git)
-cd CVD-Prophet-Forecasting
+git clone [https://github.com/kritikaamohan/cardiovascular_prediction.git](https://github.com/kritikaamohan/cardiovascular_prediction.git)
+cd cardiovascular_prediction
 
 ```
 
 
-2. **Create and activate a virtual environment (recommended):**
+2. **Create and activate a virtual environment:**
 ```bash
 python -m venv venv
 # On Windows:
@@ -72,7 +72,7 @@ source venv/bin/activate
 ```
 
 
-3. **Install the required dependencies:**
+3. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 
@@ -84,29 +84,29 @@ pip install -r requirements.txt
 
 ## 📊 Usage
 
-1. Place your time-series dataset inside the `data/` directory (ensure it contains proper date and target metric columns, e.g., `ds` and `y` for Prophet).
-2. Open the Jupyter notebooks in `notebooks/` or run the core scripts in `src/` to train the model and generate forecasts:
+1. Ensure your historical data file (`CVD.csv`) is placed inside the `data/` directory.
+2. Open Jupyter Lab or Notebook to run the forecasting workflow:
 ```bash
-python src/train_forecast.py
+jupyter notebook notebooks/CVD_Prophet_Forecasting_2030.ipynb
 
 ```
 
 
-3. Inspect the outputs and evaluation plots generated in the `outputs/` folder.
+3. Review the generated forecast CSVs and risk rankings updated dynamically inside the `outputs/` folder.
 
 ---
 
 ## 🔮 Future Enhancements
 
-* [ ] Incorporate exogenous variables (e.g., environmental factors, demographic features) into the Prophet model.
-* [ ] Perform hyperparameter tuning on seasonality parameters and changepoint priors.
-* [ ] Deploy the forecasting model via a lightweight web interface (Streamlit or Flask).
+* [ ] Integrate external socio-economic and environmental regressors into the Prophet model to improve forecast precision.
+* [ ] Build an interactive web dashboard (using Streamlit or Plotly Dash) to visualize county-level risk maps dynamically.
+* [ ] Automate the end-to-end pipeline execution using modular Python scripts.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://www.google.com/search?q=https://github.com/Gauravkumar8864/CVD-Prophet-Forecasting/issues&utm_source=gemini).
+Contributions, bug reports, and feature requests are welcome! Feel free to open an issue or submit a pull request on the [issues page](https://www.google.com/search?q=https://github.com/kritikaamohan/cardiovascular_prediction/issues&utm_source=gemini).
 
 ---
 
