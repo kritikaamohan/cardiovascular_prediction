@@ -1,6 +1,6 @@
 # 📈 Cardiovascular Disease (CVD) Prophet Forecasting & Risk Analysis
 
-An advanced time-series forecasting and risk-assessment pipeline built using Meta’s **Prophet** model to project cardiovascular disease (CVD) trends, evaluate county-level impacts, and identify high-risk demographic segments through 2030.
+An advanced time-series forecasting and risk-assessment pipeline built using Meta’s **Prophet** model to project cardiovascular disease (CVD) trends, evaluate county-level impacts, and identify high-risk demographic segments through 2030. Developed as a collaborative group project[cite: 1].
 
 ---
 
@@ -101,6 +101,12 @@ jupyter notebook notebooks/CVD_Prophet_Forecasting_2030.ipynb
 * [ ] Integrate external socio-economic and environmental regressors into the Prophet model to improve forecast precision.
 * [ ] Build an interactive web dashboard (using Streamlit or Plotly Dash) to visualize county-level risk maps dynamically.
 * [ ] Automate the end-to-end pipeline execution using modular Python scripts.
+
+---
+
+## 👥 Team & Collaboration
+
+This project was successfully designed and implemented collaboratively as a team effort.
 
 ---
 
