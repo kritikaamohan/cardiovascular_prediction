@@ -27,14 +27,23 @@ Time-series forecasting plays a critical role in proactive healthcare management
 
 ## 📂 Repository Structure
 ```text
-CVD-Prophet-Forecasting/
+cardiovascular_prediction/
 │
-├── data/                  # Dataset directory (raw & processed time-series data)
-├── notebooks/             # Jupyter notebooks for exploratory data analysis and modeling
-├── src/                   # Source code scripts for data preprocessing and forecasting
-├── outputs/               # Generated figures, plots, and prediction results
-├── requirements.txt       # Project dependencies
-└── README.md              # Project documentation
+├── data/
+│   └── CVD.csv                    # Main input dataset
+│
+├── notebooks/                     # Analysis and forecasting scripts/notebooks
+│   └── CVD_Prophet_Forecasting_2030.ipynb[cite: 1]
+│
+├── outputs/                       # Generated model outputs and forecasts[cite: 1]
+│   ├── county_forecast_2030_35_64.csv
+│   ├── county_forecast_2030_65_plus.csv
+│   ├── top10_high_risk_counties_35_64.csv
+│   ├── top10_high_risk_counties_65_plus.csv
+│   └── validation_metrics.csv
+│
+├── requirements.txt               # Python dependencies[cite: 1]
+└── README.md                      # Project documentation[cite: 1]
 
 ```
 
